@@ -19,13 +19,27 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+    - name: Setup Go environment
+      uses: actions/setup-go@v2.0.3
+      with:
+        # The Go version to download (if necessary) and use. Supports semver spec and ranges.
+        go-version: 1.13
+    
     # Runs a single command using the runners shell
     - name: install
       run: |
-        brew install hugo
+        apt-get install hugo
         hugo -version
         
     - name: build
       run: |
         hugo
         tar -zcvf public.tar.gz public
+    
+    - name: Upload artifact
+      uses: actions/upload-artifact@v1.0.0
+      with:
+        # Artifact name
+        name: public
+        # Directory containing files to upload
+        path: public
