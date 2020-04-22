@@ -1,3 +1,5 @@
+https://github.com/SuperSupeng/superssssss.cn/workflows/CI/badge.svg
+
 # Subranium的小站
 
 这是 Subranium 的小站，地址：**<http://superssssss.cn>**
