@@ -33,7 +33,7 @@ jobs:
     - name: artifact
       uses: actions/upload-artifact@master
       with:
-        name: website
+        name: public
         path: './public'
     
     - name: executing remote ssh commands using password
@@ -43,3 +43,13 @@ jobs:
         username: ${{ secrets.ALIYUN_USER }}
         password: ${{ secrets.ALIYUN_PASSWORD }}
         script: bash /root/del.sh
+    
+    - name: deploy file to server
+      uses: wlixcc/SFTP-Deploy-Action@v1.0
+      with:
+        username: ${{ secrets.ALIYUN_USER }}
+        server: '${{ secrets.ALIYUN_HOST }}'
+        ssh_private_key: ${{ secrets.ALIYUN_PASSWORD }}
+        local_path: './public/*'
+        remote_path: '/root'
+        args: '-o ConnectTimeout=5'
