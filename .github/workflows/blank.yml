@@ -28,7 +28,7 @@ jobs:
     # Runs a single command using the runners shell
     - name: install
       run: |
-        apt-get install hugo
+        sudo apt-get install hugo
         hugo -version
         
     - name: build
