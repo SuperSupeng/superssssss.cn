@@ -35,3 +35,11 @@ jobs:
       with:
         name: website
         path: './public'
+    
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.ALIYUN_HOST }}
+        username: ${{ secrets.ALIYUN_USER }}
+        password: ${{ secrets.ALIYUN_PASSWORD }}
+        script: whoami
