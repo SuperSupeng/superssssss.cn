@@ -12,6 +12,12 @@
 
 ---
 
+<p>My Github chart:</p>
+
+<p><img src="https://ghchart.rshah.org/SuperSupeng" alt="SuperSupeng's Github chart" style="width: 100%;"></p>
+
+---
+
 <br/> 
 <img src="/img/picture.jpeg" alt="leifengta"></div>
 <br/>
