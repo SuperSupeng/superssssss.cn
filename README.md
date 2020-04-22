@@ -1,4 +1,4 @@
-https://github.com/SuperSupeng/superssssss.cn/workflows/CI/badge.svg
+![CI](https://github.com/SuperSupeng/superssssss.cn/workflows/CI/badge.svg)
 
 # Subranium的小站
 
