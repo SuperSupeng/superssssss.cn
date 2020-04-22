@@ -42,8 +42,4 @@ jobs:
         host: ${{ secrets.ALIYUN_HOST }}
         username: ${{ secrets.ALIYUN_USER }}
         password: ${{ secrets.ALIYUN_PASSWORD }}
-        script: if [ ! -f "/data/filename" ];then
-                echo "文件不存在"
-                else
-                rm -rf /data/filename
-                fi
+        script: bash /root/del.sh
