@@ -19,27 +19,19 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - name: Setup Go environment
-      uses: actions/setup-go@v2.0.3
+    - name: Checkout
+      uses: actions/checkout@master
       with:
-        # The Go version to download (if necessary) and use. Supports semver spec and ranges.
-        go-version: 1.13
+          submodules: true
+          fetch-depth: 1
     
-    # Runs a single command using the runners shell
-    - name: install
-      run: |
-        sudo apt-get install hugo
-        hugo version
-        
-    - name: build
-      run: |
-        hugo
-        tar -zcvf public.tar.gz public
-    
-    - name: Upload artifact
-      uses: actions/upload-artifact@v1.0.0
+    - name: Build site
+      uses: jakejarvis/hugo-build-action@master
       with:
-        # Artifact name
-        name: public
-        # Directory containing files to upload
-        path: public
+        args: --minify
+    
+    - name: artifact
+      uses: actions/upload-artifact@master
+      with:
+        name: website
+        path: './public'
