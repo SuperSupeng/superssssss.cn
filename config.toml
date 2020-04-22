@@ -2,11 +2,12 @@ baseURL = "http://superssssss.cn/"
 languageCode = "zh-CN"
 title = "Subranium的小站"
 
-theme = "LeaveIt"
+theme = "mogege"
 
 paginate = 12
 
 enableEmoji = true
+enableRobotsTXT = true # 支持 robots.txt
 hasCJKLanguage = true
 preserveTaxonomyNames = true
 

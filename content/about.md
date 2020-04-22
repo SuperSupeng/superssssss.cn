@@ -12,6 +12,20 @@
 
 ---
 
+<div class="about-info">
+    <div class="about-info-left">
+        <p>Contact me:</p>
+        <ul>
+	<li><p><span class="iconfont icon-mail"></span> Email: <a href="3529601371@qq.com"
+                    rel="nofollow noreferrer" target="_blank">3529601371@qq.com</a></p></li>
+	<li><p><span class="iconfont icon-github"></span> GitHub: <a href="https://github.com/SuperSupeng"
+                        rel="nofollow noreferrer" target="_blank">SuperSupeng</a></p></li>
+        </ul>
+    </div>
+</div>
+
+---
+
 <p>My Github chart:</p>
 
 <p><img src="https://ghchart.rshah.org/SuperSupeng" alt="SuperSupeng's Github chart" style="width: 100%;"></p>
