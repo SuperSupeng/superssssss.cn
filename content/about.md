@@ -126,7 +126,7 @@ menu: "main"
 ---
 <br/>
 
-<img src="/img/picture.jpeg" alt="leifengta">
+<img src="http://cdn.superssssss.cn/image/picture.jpeg" alt="leifengta">
 <br/>
 
-<image src="/img/picture1.jpeg" width = "780" height = "213" alt="jinjihu">
+<image src="http://cdn.superssssss.cn/image/picture1.jpeg" width = "780" height = "213" alt="jinjihu">
