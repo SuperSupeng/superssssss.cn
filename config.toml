@@ -27,12 +27,17 @@ preserveTaxonomyNames = true
     name = "标签"
     url = "/tags/"
     weight = 3
+  [[menu.main]]
+    name = "About me"
+    url = "/about/"
+    weight = 4
 
 [params]
     since = 2019
     author = "Subranium"
     avatar = "/img/favicon.jpeg"
     subtitle = "我们终此一生，就是要摆脱他人的期待，找到真正的自己。"
+    beian = "黑ICP备20002122"
     license= '本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可'
     hidecredits = true
 
