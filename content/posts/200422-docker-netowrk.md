@@ -7,17 +7,8 @@ tags: ["docker", "docker网络" ,"docker多机网络"]
 
 ## 使用方式
 您可以通过以下方式使用本书：
-- Github地址：https://github.com/Knowledge-Precipitation-Tribe/Dive-into-Docker
-- GitBook在线浏览：https://docs.docker.knowledge-precipitation.site/
-
-
-## content
-- <a href = "#Docker单机网络">Docker单机网络</a>
-- <a href = "#Docker端口映射">Docker端口映射</a>
-- <a href = "#flask-redis实战">flask-redis实战</a>
-- <a href = "#Docker多机网络">Docker多机网络</a>
-- <a href = "#flask-redis多机实战">flask-redis多机实战</a>
-
+**完整项目请查看Github：[链接](https://github.com/Knowledge-Precipitation-Tribe/Dive-into-Docker)**
+**或通过gitbook在线查看: [链接](https://docs.docker.knowledge-precipitation.site/)**
 
 ## [Docker网络](#content)
 
@@ -41,7 +32,7 @@ docker network ls
 
 可以看到在docker中有三种网络：
 
-![在这里插入图片描述](https://user-gold-cdn.xitu.io/2020/3/26/17116fba002ff664?w=1222&h=190&f=png&s=180899)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200326210700695.png)
 
 默认情况下容器使用的是桥接也就是Bridge Network，之后我们启动一个容器并查看网络具体内容
 
@@ -52,7 +43,7 @@ docker inspect 0b464e45177b(改成你查看到的NETWORK ID)
 
 在network的具体细节内我们可以看到containers中包含了我们刚才创建的容器
 
-![在这里插入图片描述](https://user-gold-cdn.xitu.io/2020/3/26/17116fba01d2ba19?w=1768&h=436&f=png&s=803028)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200326210715469.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3NfODQyNDk5NDY3,size_16,color_FFFFFF,t_70)
 
 可以看到我们当前的容器是连接到了bridge的网络中。在我们的主机和容器之间会创建一对vethnet以便于容器和主机之间相互通信，在主机的终端上我们可以直接ping通容器的ip地址。
 
@@ -66,11 +57,11 @@ docker run -d --name test2 busybox /bin/sh -c "while true;do sleep 3600;done"
 
 再次查看network的具体内容
 
-![在这里插入图片描述](https://user-gold-cdn.xitu.io/2020/3/26/17116fba020c84d6?w=1766&h=832&f=png&s=1555977)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200326210753190.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3NfODQyNDk5NDY3,size_16,color_FFFFFF,t_70)
 
 同时test2也会创建一堆vethnet，test1和test2的vethnet端口会都连接在一个bridge上，所以他们两个之间可以相互ping通。
 
-![在这里插入图片描述](https://user-gold-cdn.xitu.io/2020/3/26/17116fba04dcad94?w=1400&h=716&f=png&s=113118)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/202003262108109.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3NfODQyNDk5NDY3,size_16,color_FFFFFF,t_70)
 
 在已经知道了两个容器之间可以相互访问的情况下，我们现在需要实现这样一个需求：
 
@@ -88,7 +79,7 @@ docker run -d --name test2 --link test1 busybox /bin/sh -c "while true;do sleep 
 
 之后我们进入test2中，`ping test1`的IP地址和test1都可以ping通。也就是我们在使用`--link`时是创建的DNS服务，将test1映射到172.17.0.2上。
 
-![在这里插入图片描述](https://user-gold-cdn.xitu.io/2020/3/26/17116fba0506ceff?w=1284&h=738&f=png&s=1091403)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200326210827875.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3NfODQyNDk5NDY3,size_16,color_FFFFFF,t_70)
 
 我们也可以手动创建一个network，在创建容器时将容器连接到我们自己创建的network上，此时如果我们在自建的网络上创建两个容器，他们两个之间是默认`link`好的。
 
@@ -108,15 +99,15 @@ docker run --name web -d -p 80:80 nginx
 
 我们容器的IP地址：
 
-![在这里插入图片描述](https://user-gold-cdn.xitu.io/2020/3/26/17116fba0586cb20?w=1760&h=436&f=png&s=817116)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200326210850275.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3NfODQyNDk5NDY3,size_16,color_FFFFFF,t_70)
 
 Linux服务器的IP地址分别是：
 
-![在这里插入图片描述](https://user-gold-cdn.xitu.io/2020/3/26/17116fba3a63053f?w=1636&h=92&f=png&s=116641)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200326210903327.png)
 
 然后我们访问Linux服务器的80端口：
 
-![在这里插入图片描述](https://user-gold-cdn.xitu.io/2020/3/26/17116fba45c4e6ba?w=1090&h=548&f=png&s=121872)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2020032621091611.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3NfODQyNDk5NDY3,size_16,color_FFFFFF,t_70)
 
 可以看到确实是可以成功映射的。
 
@@ -187,11 +178,11 @@ docker run -d --link redis -p 5000:5000 --name flask-redis -e REDIS_HOST=redis s
 
 我们来看一下效果，首次访问
 
-![在这里插入图片描述](https://user-gold-cdn.xitu.io/2020/3/26/17116fba557823c8?w=1282&h=56&f=png&s=15446)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200326210938861.png)
 
 再访问一次看一下效果
 
-![在这里插入图片描述](https://user-gold-cdn.xitu.io/2020/3/26/17116fba642b9c62?w=1284&h=56&f=png&s=14949)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200326210949408.png)
 
 可以看到我们已经实现了多容器应用的部署💯。
 
@@ -199,7 +190,7 @@ docker run -d --link redis -p 5000:5000 --name flask-redis -e REDIS_HOST=redis s
 
 刚才我们已经成功的实现了flask-redis应用程序，但是还存在一个问题，我们的服务可能是访问量很大的一个服务，这时需要我们将redis和flask部署到不同的服务器上，我们怎么才能让这两个部署在不同服务器上的容器相互通信呢？
 
-![在这里插入图片描述](https://user-gold-cdn.xitu.io/2020/3/26/17116fba6ecf9727?w=2296&h=918&f=png&s=208184)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200326211001434.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3NfODQyNDk5NDY3,size_16,color_FFFFFF,t_70)
 
 两个容器之间数据的传递使用的技术是VXLAN，他是一个overlay网络的实现，更多内容可以参考：[关于VLAN和VXLAN的理解](https://blog.csdn.net/octopusflying/article/details/77609199)。
 
@@ -274,8 +265,8 @@ docker network create -d overlay demo
 
 我们现在在node1和node2上查看一下网络情况
 
-![在这里插入图片描述](https://user-gold-cdn.xitu.io/2020/3/26/17116fba699b2407?w=1478&h=264&f=png&s=434776)
-![在这里插入图片描述](https://user-gold-cdn.xitu.io/2020/3/26/17116fba79d5156e?w=1462&h=270&f=png&s=440927)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200326211023911.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3NfODQyNDk5NDY3,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200326211037132.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3NfODQyNDk5NDY3,size_16,color_FFFFFF,t_70)
 
 我们虽然没有在node2上创建demo网络，但是通过etcd会同步的进行创建，这样我们两台服务器上都有了一个叫做demo的网络，接下来我们创建容器时就可以将demo作为容器的网络。
 
@@ -297,6 +288,6 @@ docker run -d --net demo -p 5000:5000 --name flask-redis -e REDIS_HOST=redis su/
 
 接下来我们看一下实验结果
 
-![在这里插入图片描述](https://user-gold-cdn.xitu.io/2020/3/26/17116fba78dffec9?w=1280&h=56&f=png&s=15728)
-![在这里插入图片描述](https://user-gold-cdn.xitu.io/2020/3/26/17116fba8411eeda?w=1296&h=58&f=png&s=15026)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200326211051277.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200326211102640.png)
 可以看到我们已经实现了多容器应用的多机部署💯。
