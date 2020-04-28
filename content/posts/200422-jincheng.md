@@ -39,22 +39,22 @@ tags: ["操作系统", "进程"]
 
 ## 2.3 图解并发与并行
 假设我们有两个任务A和B，我们使用并发执行是这样的。
-![并发操作](https://imgconvert.csdnimg.cn/aHR0cHM6Ly91c2VyLWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vNDQxOTk5Mi8zNTU3MjY5NS1lZTYyNzVjOC0wNWIzLTExZTgtODQ2MC0yYzFhYzcwODE1NzQuanBn?x-oss-process=image/format,png)
+![并发操作](http://cdn.superssssss.cn/image/aHR0cHM6Ly91c2VyLWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vNDQxOTk5Mi8zNTU3MjY5NS1lZTYyNzVjOC0wNWIzLTExZTgtODQ2MC0yYzFhYzcwODE1NzQuanBn.jpeg)
 可以看到虽然A和B作为两个整体的任务但是未必会直接执行完，而是会在两个任务间来回切换。因为cpu切换的速度实在太快了，所以我们看起来好像是A和B在同时执行，但其实在每个时间点上只有一个任务在执行。
 
 我们再来看一下并行的方式。
-![并行操作](https://imgconvert.csdnimg.cn/aHR0cHM6Ly91c2VyLWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vNDQxOTk5Mi8zNTU3MjcwMS1mMTQ1MjBmNi0wNWIzLTExZTgtOTk4OS1mNGRjYzdmYzk4N2UuanBn?x-oss-process=image/format,png)
+![并行操作](http://cdn.superssssss.cn/image/aHR0cHM6Ly91c2VyLWltYWdlcy5naXRodWJ1c2VyY29udGVudC5jb20vNDQxOTk5Mi8zNTU3MjcwMS1mMTQ1MjBmNi0wNWIzLTExZTgtOTk4OS1mNGRjYzdmYzk4N2UuanBn.jpeg)
 并行操作是指两个任务同时执行的。
 
 # 3. 进程，线程与协程
 ## 3.1 进程 Process
 电脑中每个软件的启动就代表一个进程，就是把写的程序加载到操作系统中来执行预定好的任务。操作系统会为进程分配相应的资源来支撑它完成任务，每个进程会分配一个唯一的PID。
-![进程](https://img-blog.csdnimg.cn/2020022218511717.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3NfODQyNDk5NDY3,size_16,color_FFFFFF,t_70)
+![进程](http://cdn.superssssss.cn/image/2020022218511717.png)
 我们这次用老王来举例，假如说老王现在想盖个房子，我们就可以把盖房子这件事作为一个任务，而老王就是负责这个任务的进程。
 
 ## 3.2 线程 Thread
 线程是进程的执行实例，是一个程序执行的最小单元，每个进程里的任务会有线程去具体执行。
-![线程](https://img-blog.csdnimg.cn/20200222185252417.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3NfODQyNDk5NDY3,size_16,color_FFFFFF,t_70)
+![线程](http://cdn.superssssss.cn/image/20200222185252417.png)
 我们还是继续说老王，现在盖房子这个任务已经确定下来了，但是他发现自己不会盖，要请个工人来盖房子，于是他去外面请了一个工人A，这个工人A要做搬砖和搬木头的工作，此时这个工人A就是一个**进程**，老王还要求他这两个任务不能差距太大，要同步进行，所以这个工人A只能搬一趟转头，搬一趟木头，这样的操作就是**单线程的并发操作**。
 
 干了两天，工人A不高兴了干的活太多了要加钱，这时老王一看一个人干也确实慢，就去外面又请了一个工人B，此时工人B也就对应着一个**线程**，老王让工人A继续搬砖，而工人B来负责搬木头，这样两个任务就能同时进行了，这就是**多线程的并行操作**。而且此时工人A和工人B是同时**共享着老王提供的资源**。
