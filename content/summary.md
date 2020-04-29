@@ -20,7 +20,7 @@ date: 2020-04-29T11:19:13+08:00
 
 [4] Data-structures-and-Algorithms
 - Gitbook在线浏览：[https://docs.data-structures.knowledge-precipitation.site](https://docs.data-structures.knowledge-precipitation.site/)
-- Github地址：[https://github.com/Subranium/Data-structures-and-Algorithms](https://github.com/Subranium/Data-structures-and-Algorithms)
+- Github地址：[https://github.com/Knowledge-Precipitation-Tribe/Data-structure-implementation](https://github.com/Knowledge-Precipitation-Tribe/Data-structure-implementation)
 
 [5] Dive-into-Linux
 - Gitbook在线浏览：[https://docs.linux.knowledge-precipitation.site](https://docs.linux.knowledge-precipitation.site/)
