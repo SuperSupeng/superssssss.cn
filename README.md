@@ -6,7 +6,14 @@
 
 使用 Markdown 书写，用 [Hugo](https://gohugo.io/) 生成静态网页，用 GitHub Actions 部署到 [superssssss.cn](http://superssssss.cn) 上。
 
-主题使用的是 [LeaveIt](https://github.com/liuzc/LeaveIt)
+主题使用的是 [Mogege](https://github.com/Mogeko/mogege)
+
+# 博客界面
+![blog1](http://cdn.superssssss.cn/image/blog1.png)
+
+![blog2](http://cdn.superssssss.cn/image/blog2.png)
+
+![blog2](http://cdn.superssssss.cn/image/blog3.png)
 
 # LICENSE
 ## 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0)
