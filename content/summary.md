@@ -48,17 +48,14 @@ date: 2020-04-29T11:19:13+08:00
 # Go
 
 [1] Go知识图谱：[https://www.processon.com/view/link/5a9ba4c8e4b0a9d22eb3bdf0#map](https://www.processon.com/view/link/5a9ba4c8e4b0a9d22eb3bdf0#map)
+
 [2] Go framework
 - Gitbook在线浏览：[https://docs.go-framework.knowledge-precipitation.site](https://docs.go-framework.knowledge-precipitation.site/)
 - Github地址：[https://github.com/Knowledge-Precipitation-Tribe/go-framework](https://github.com/Knowledge-Precipitation-Tribe/go-framework)
 
 ---
 
-# ML
+# Data analysis
 
 [1] Data-analysis-with-python
 - Github地址：[https://github.com/SuperSupeng/Data-analysis-with-python](https://github.com/SuperSupeng/Data-analysis-with-python)
-
----
-
-# DL
