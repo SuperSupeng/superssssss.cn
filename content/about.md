@@ -130,3 +130,11 @@ menu: "main"
 <br/>
 
 <image src="http://cdn.superssssss.cn/image/picture1.jpeg" width = "780" height = "213" alt="jinjihu">
+
+<br/>
+
+---
+<br/>
+bilibili献给新一代的演讲《后浪》
+
+{{< bilibili BV1FV411d7u7 >}}
