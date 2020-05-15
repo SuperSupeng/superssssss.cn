@@ -22,6 +22,7 @@ date: 2020-04-29T11:19:13+08:00
   - <a href = "#go-crawler-distributed">go-crawler-distributed</a>
 - <a href = "#Data-Mining">Data-Mining</a>
   - <a href = "#Data-analysis-with-python">Data-analysis</a>
+  - <a href = "#Dive-into-feature-engineering">Dive-into-feature-engineering</a>
 - <a href = "#Machine-Learning">Machine-Learning</a>
   - <a href = "#Maximum-Entropy-Model-and-Expectation-maximization-algorithm">Maximum-Entropy-Model-and-Expectation-maximization-algorithm</a>
   - <a href = "#Decision-tree-and-Random-forest">Decision-tree-and-Random-forest</a>
@@ -116,6 +117,12 @@ date: 2020-04-29T11:19:13+08:00
 <div id = "Data-analysis-with-python">[1] Data-analysis-with-python</div>
 
 - Github地址：[https://github.com/SuperSupeng/Data-analysis-with-python](https://github.com/SuperSupeng/Data-analysis-with-python)
+
+
+<div id = "Dive-into-feature-engineering">[2] Dive-into-feature-engineering</div>
+
+- Gitbook在线浏览：[https://docs.feature-engineering.knowledge-precipitation.site/](https://docs.feature-engineering.knowledge-precipitation.site/)
+- Github地址：[https://github.com/Knowledge-Precipitation-Tribe/Dive-into-feature-engineering](https://github.com/Knowledge-Precipitation-Tribe/Dive-into-feature-engineering)
 
 ---
 
