@@ -24,11 +24,6 @@ date: 2020-04-29T11:19:13+08:00
   - <a href = "#Data-analysis-with-python">Data-analysis</a>
   - <a href = "#Dive-into-feature-engineering">Dive-into-feature-engineering</a>
 - <a href = "#Machine-Learning">Machine-Learning</a>
-  - <a href = "#Maximum-Entropy-Model-and-Expectation-maximization-algorithm">Maximum-Entropy-Model-and-Expectation-maximization-algorithm</a>
-  - <a href = "#Decision-tree-and-Random-forest">Decision-tree-and-Random-forest</a>
-  - <a href = "#SVM">SVM</a>
-  - <a href = "#Clustering">Clustering</a>
-  - <a href = "#ayesian-network">ayesian-network</a>
 - <a href = "#Deep-Learning">Deep-Learning</a>
   - <a href = "#Neural-network">Neural-network</a>
   - <a href = "#Depp-Neural-network">Depp-Neural-network</a>
@@ -128,30 +123,9 @@ date: 2020-04-29T11:19:13+08:00
 
 # <div id = "Machine-Learning">Machine-Learning</div>
 
-<div id = "Maximum-Entropy-Model-and-Expectation-maximization-algorithm">[1] Maximum-Entropy-Model-and-Expectation-maximization-algorithm</div>
+- 语雀在线浏览：[https://www.yuque.com/books/share/460b2db9-de86-4134-b9c6-d1ae66693423?#](https://www.yuque.com/books/share/460b2db9-de86-4134-b9c6-d1ae66693423?#)
 
 - Github地址：[https://github.com/Knowledge-Precipitation-Tribe/Maximum-Entropy-Model-and-Expectation-maximization-algorithm](https://github.com/Knowledge-Precipitation-Tribe/Maximum-Entropy-Model-and-Expectation-maximization-algorithm)
-
-
-<div id = "Decision-tree-and-Random-forest">[2] Decision-tree-and-Random-forest</div>
-
-- Gitbook在线浏览：[https://docs.decision-tree.knowledge-precipitation.site](https://docs.decision-tree.knowledge-precipitation.site)
-- Github地址：[https://github.com/Knowledge-Precipitation-Tribe/Decision-tree-and-Random-forest](https://github.com/Knowledge-Precipitation-Tribe/Decision-tree-and-Random-forest)
-
-<div id = "SVM">[3] SVM</div>
-
-- Gitbook在线浏览：[https://docs.svm.knowledge-precipitation.site](https://docs.svm.knowledge-precipitation.site)
-- Github地址：[https://github.com/Knowledge-Precipitation-Tribe/Decision-tree-and-Random-forest](https://github.com/Knowledge-Precipitation-Tribe/Decision-tree-and-Random-forest)
-
-<div id = "Clustering">[4] Clustering</div>
-
-- Gitbook在线浏览：[https://docs.clustering.knowledge-precipitation.site](https://docs.clustering.knowledge-precipitation.site)
-- Github地址：[https://github.com/Knowledge-Precipitation-Tribe/Decision-tree-and-Random-forest](https://github.com/Knowledge-Precipitation-Tribe/Decision-tree-and-Random-forest)
-
-<div id = "Bayesian-network">[5] Bayesian-network</div>
-
-- Gitbook在线浏览：[https://docs.bayesian-network.knowledge-precipitation.site](https://docs.bayesian-network.knowledge-precipitation.site)
-- Github地址：[https://github.com/Knowledge-Precipitation-Tribe/Decision-tree-and-Random-forest](https://github.com/Knowledge-Precipitation-Tribe/Decision-tree-and-Random-forest)
 
 ---
 
