@@ -99,7 +99,7 @@ menu: "main"
     <div class="about-info-left">
         <p>欢迎来到Subranium的小站！<br/>
 不会做饭的摄影师不是好码农。<br/>
-90后，喜欢历史和诗词，摄影小白。<br/>
+90后，喜欢历史和评书，摄影小白。<br/>
 何以解忧，唯有暴富。</p>
         <p>Contact me:</p>
         <ul>

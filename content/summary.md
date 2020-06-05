@@ -26,9 +26,9 @@ date: 2020-04-29T11:19:13+08:00
 - <a href = "#Machine-Learning">Machine-Learning</a>
 - <a href = "#Deep-Learning">Deep-Learning</a>
   - <a href = "#Neural-network">Neural-network</a>
-  - <a href = "#Depp-Neural-network">Depp-Neural-network</a>
   - <a href = "#Convolutional-Neural-network">Convolutional-Neural-network</a>
   - <a href = "#Recurrent-Neural-network">Recurrent-Neural-networkk</a>
+  - <a href = "#Model-Deployment">Model-Deployment</a>
   - <a href = "#Tricks">Tricks</a>
   - <a href = "#Graph-neural-network">Graph-neural-network</a>
 
@@ -136,20 +136,20 @@ date: 2020-04-29T11:19:13+08:00
 - Gitbook在线浏览：[https://docs.nn.knowledge-precipitation.site](https://docs.nn.knowledge-precipitation.site/)
 - Github地址：[https://github.com/Knowledge-Precipitation-Tribe/Neural-network](https://github.com/Knowledge-Precipitation-Tribe/Neural-network)
 
-<div id = "Deep-Neural-network">[2] Depp-Neural-network</div>
-
-- Gitbook在线浏览：[https://docs.dnn.knowledge-precipitation.site](https://docs.dnn.knowledge-precipitation.site/)
-- Github地址：[https://github.com/Knowledge-Precipitation-Tribe/Neural-network](https://github.com/Knowledge-Precipitation-Tribe/Neural-network)
-
-<div id = "Convolutional-Neural-network">[3] Convolutional-Neural-network</div>
+<div id = "Convolutional-Neural-network">[2] Convolutional-Neural-network</div>
 
 - Gitbook在线浏览：[https://docs.cnn.knowledge-precipitation.site](https://docs.cnn.knowledge-precipitation.site/)
 - Github地址：[https://github.com/Knowledge-Precipitation-Tribe/Neural-network](https://github.com/Knowledge-Precipitation-Tribe/Neural-network)
 
-<div id = "Recurrent-Neural-network">[4] Recurrent-Neural-network</div>
+<div id = "Recurrent-Neural-network">[3] Recurrent-Neural-network</div>
 
 - Gitbook在线浏览：[https://docs.rnn.knowledge-precipitation.site](https://docs.rnn.knowledge-precipitation.site/)
 - Github地址：[https://github.com/Knowledge-Precipitation-Tribe/Neural-network](https://github.com/Knowledge-Precipitation-Tribe/Neural-network)
+
+<div id = "Model-Deployment">[4] Model-Deployment</div>
+
+- Gitbook在线浏览：[https://docs.model-deployment.knowledge-precipitation.site](https://docs.model-deployment.knowledge-precipitation.site/)
+- Github地址：[https://github.com/Knowledge-Precipitation-Tribe/Model-Deployment](https://github.com/Knowledge-Precipitation-Tribe/Model-Deployment)
 
 <div id = "Tricks">[5] Tricks</div>
 
