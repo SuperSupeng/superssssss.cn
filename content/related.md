@@ -8,7 +8,7 @@ date: 2020-05-18
 
 [2] 500px： [Subranium](https://500px.com.cn/59ca3227d4f309d3ac1b132f1dc122066?rs=59ca3227d4f309d3ac1b132f1dc122066)
 
-[3] 名画赏析： [语雀](https://www.yuque.com/books/share/2e9effe7-d64f-4f39-a566-268f6528d214?#)
+[3] 艺术赏析： [语雀](https://www.yuque.com/books/share/2e9effe7-d64f-4f39-a566-268f6528d214?#)
 
 [4] 历史： [语雀](https://www.yuque.com/books/share/1f059828-55ee-41d1-87c8-34e904dfb4d2?#)
 
