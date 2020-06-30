@@ -32,6 +32,7 @@ date: 2020-04-29T11:19:13+08:00
   - <a href = "#Model-Deployment">Model-Deployment</a>
   - <a href = "#Tricks">Tricks</a>
   - <a href = "#Graph-neural-network">Graph-neural-network</a>
+- <a href = "#Urban-computing">Urban-computing</a>
 
 一些项目存在待迁移或待完善情况
 
@@ -165,3 +166,7 @@ date: 2020-04-29T11:19:13+08:00
 
 - Gitbook在线浏览：[https://docs.gnn.knowledge-precipitation.site](https://docs.gnn.knowledge-precipitation.site/)
 - Github地址：[https://github.com/Knowledge-Precipitation-Tribe/Neural-network](https://github.com/Knowledge-Precipitation-Tribe/Neural-network)
+
+# <div id = "Urban-computing">Urban-computing</div>
+
+- Github地址：[https://github.com/Knowledge-Precipitation-Tribe/Urban-computing-papers](https://github.com/Knowledge-Precipitation-Tribe/Urban-computing-papers)
