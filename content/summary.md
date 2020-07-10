@@ -33,6 +33,7 @@ date: 2020-04-29T11:19:13+08:00
   - <a href = "#Tricks">Tricks</a>
   - <a href = "#Graph-neural-network">Graph-neural-network</a>
 - <a href = "#Urban-computing">Urban-computing</a>
+  - <a href = "#How-to-Build-a-Graph-Based-Deep-Learning-Architecture-in-Traffic-Domain">How-to-Build-a-Graph-Based-Deep-Learning-Architecture-in-Traffic-Domain</a>
 
 一些项目存在待迁移或待完善情况
 
@@ -170,3 +171,8 @@ date: 2020-04-29T11:19:13+08:00
 # <div id = "Urban-computing">Urban-computing</div>
 
 - Github地址：[https://github.com/Knowledge-Precipitation-Tribe/Urban-computing-papers](https://github.com/Knowledge-Precipitation-Tribe/Urban-computing-papers)
+
+<div id = "How-to-Build-a-Graph-Based-Deep-Learning-Architecture-in-Traffic-Domain">[1] How to Build a Graph-Based Deep Learning Architecture in Traffic Domain</div>
+
+- nbviewer在线浏览：[nbviewer](https://nbviewer.jupyter.org/github/Knowledge-Precipitation-Tribe/How-to-Build-a-Graph-Based-Deep-Learning-Architecture-in-Traffic-Domain/blob/master/README.ipynb)
+- Github地址：[https://github.com/Knowledge-Precipitation-Tribe/How-to-Build-a-Graph-Based-Deep-Learning-Architecture-in-Traffic-Domain](https://github.com/Knowledge-Precipitation-Tribe/How-to-Build-a-Graph-Based-Deep-Learning-Architecture-in-Traffic-Domain)
