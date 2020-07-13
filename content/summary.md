@@ -165,8 +165,8 @@ date: 2020-04-29T11:19:13+08:00
 
 <div id = "Graph-neural-network">[6] Graph-neural-network</div>
 
-- Gitbook在线浏览：[https://docs.gnn.knowledge-precipitation.site](https://docs.gnn.knowledge-precipitation.site/)
-- Github地址：[https://github.com/Knowledge-Precipitation-Tribe/Neural-network](https://github.com/Knowledge-Precipitation-Tribe/Neural-network)
+- 语雀在线浏览：[https://www.yuque.com/books/share/863ff6cb-329b-4c04-876a-ab523913eda2](https://www.yuque.com/books/share/863ff6cb-329b-4c04-876a-ab523913eda2)
+- GCN-keras地址：[https://github.com/Knowledge-Precipitation-Tribe/GCN-keras](https://github.com/Knowledge-Precipitation-Tribe/GCN-keras)
 
 # <div id = "Urban-computing">Urban-computing</div>
 
