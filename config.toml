@@ -2,7 +2,7 @@ baseURL = "http://superssssss.cn/"
 languageCode = "zh-CN"
 title = "Subranium的小站"
 
-theme = "mogege"
+theme = "LeaveIt"
 
 paginate = 12
 
@@ -47,8 +47,11 @@ preserveTaxonomyNames = true
 
 [params.social]
     GitHub = "SuperSupeng"
-    Twitter = "superssssss"
     Email = "3529601371@qq.com"
+
+[params.live2d]
+    messagePath = "/live2d/"
+    homePath   = "http://superssssss.cn/"
 
 [permalinks]
     posts = "/:year/:filename/"

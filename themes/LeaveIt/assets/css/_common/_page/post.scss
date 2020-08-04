@@ -2,10 +2,10 @@
 
 .post-warp {
     position: relative;
-    width: 100%;
-    max-width: 780px;
     margin: 0 auto;
     padding-top: 2rem;
+    max-width: 780px;
+    width: 100%;
 
     .post-header h1 {
         margin: 0 !important;
@@ -24,14 +24,16 @@
 
         a {
             color: $light-post-link-color;
+            transition: border.1s linear;
             .dark-theme & {
                 color: $dark-post-link-color;
             }
 
             &:hover {
-                color: $light-post-link-hover-color;
+                border-bottom: 2px solid;
+                // color: $light-post-link-hover-color;
                 .dark-theme & {
-                    color: $dark-post-link-hover-color;
+                    // color: $dark-post-link-hover-color;
                 }
             }
         }
@@ -48,61 +50,68 @@
             padding-top: .8em;
             padding-bottom: .3em;
         }
-        h2::before {
-            content: "#";
+        h1::before,
+        h2::before,
+        h3::before,
+        h4::before {
             margin-right: 5px;
-            color: $light-post-link-color;
+            color: #b3b3b3;
+            font-size: 14px;
             .dark-theme & {
                 color: $dark-post-link-color;
             }
         }
-
+        h1::before {
+            content: "H₁";
+        }
+        h2::before {
+            content: "H₂";
+        }
         h3::before {
-            content: "|";
-            margin-right: 5px;
-            color: $light-post-link-color;
-
-            .dark-theme & {
-                color: $dark-post-link-color;
-            }
+            content: "H₃";
+        }
+        h4::before {
+            content: "H₄";
         }
 
         a {
             color: $light-post-link-color;
+            transition: border.1s linear;
             .dark-theme & {
                 color: $dark-post-link-color;
             }
         }
 
         a:hover {
-            color: $light-post-link-hover-color;
+            border-bottom: 2px solid;
             .dark-theme &:hover {
-                color: $dark-post-link-hover-color;
-                font-weight: bold;
-                text-decoration: underline;
+                border-bottom: 2px solid;
+                // text-decoration: underline;
+                // font-weight: bold;
             }
         }
 
         code,
         pre {
             padding: 7px;
+            word-wrap: break-word;
+            word-break: break-all;
             font-size: 13px;
             font-family: Consolas, Monaco, Menlo, Consolas, monospace;
-            word-break: break-all;
-            word-wrap: break-word;
         }
 
         code:not([class]) {
-            padding: 5px 5px;
-            background: #fff;
-            border: 1px solid #ddd;
-            box-shadow: 1px 1px 0 #fff, 2px 2px 0 #ddd;
-            margin-left: 3px;
             margin-right: 3px;
+            // box-shadow: 1px 1px 0 #fff, 2px 2px 0 #ddd;
+            margin-left: 3px;
+            padding: 5px 5px;
+            border: 1px solid #ddd;
+            border-radius: 1px;
+            background: #fff;
 
             .dark-theme &:not([class]) {
                 background: transparent;
-                box-shadow: 1px 1px 0 $dark-font-secondary-color, 2px 2px 0 $dark-font-secondary-color;
+                // box-shadow: 1px 1px 0 $dark-font-secondary-color, 2px 2px 0 $dark-font-secondary-color;
             }
         }
 
@@ -111,8 +120,8 @@
         }
 
         table {
-            max-width: 100%;
             margin: 10px 0;
+            max-width: 100%;
             border-spacing: 0;
             box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.125);
 
@@ -131,23 +140,23 @@
         }
 
         .image-caption:not(:empty) {
+            display: inline-block;
+            margin: 0 auto;
+            padding: 10px;
             min-width: 20%;
             max-width: 80%;
-            display: inline-block;
-            padding: 10px;
-            margin: 0 auto;
             border-bottom: 1px solid #d9d9d9;
-            font-size: 14px;
             color: #969696;
+            font-size: 14px;
             line-height: 1.7;
         }
 
         img {
             display: block;
+            overflow: hidden;
+            margin: 0 auto;
             max-width: 80%;
             height: auto;
-            margin: 0 auto;
-            overflow: hidden;
         }
 
      
@@ -157,16 +166,43 @@
         }
 
         .featured_image {
-            width: 100% !important;
-            max-width: 100% !important;
-            height: auto !important;
             margin: 0 !important;
+            max-width: 100% !important;
+            width: 100% !important;
+            height: auto !important;
         }
     }
 
     p {
-        font-size: 1em;
         margin: .5em 0 .5em 0;
+        font-size: 1em;
+    }
+
+    pre {
+        margin-left: 22px;
+    }
+    ul, ol, p {
+        padding-left: 22px;
+    }
+    ul, ol {
+        pre {
+            margin-left: 0;
+        }
+    }
+    // ul > li {
+    //     list-style-type: none;
+    //     &:before {
+    //         position: absolute;
+    //         left: 13px;
+    //         color: $theme-color;
+    //         content: '•';
+    //         font-size: 20px;
+    //     }
+    // }
+
+    li > p, 
+    blockquote > p {
+        padding-left: 0;
     }
 
     .post-copyright {
@@ -190,9 +226,9 @@
     }
 
     .post-tags {
-        padding: 1rem 0 1rem;
         display: flex;
         justify-content: space-between;
+        padding: 1rem 0 1rem;
 
     }
 
@@ -201,18 +237,17 @@
 
         &:before,
         &:after {
-            content: " ";
             display: table;
+            content: " ";
         }
 
         & a.prev,
         & a.next {
             font-weight: 600;
             font-size: 16px;
-
-            transition-property: transform;
             transition-timing-function: ease-out;
             transition-duration: 0.3s;
+            transition-property: transform;
         }
 
         & a.prev {
@@ -237,5 +272,19 @@
 
     .post-comment{
         padding: 3em 0;
+    }
+
+    .linenums {
+        code:not([class]) {
+            margin: 0;
+            padding: 0;
+            border: none;
+            background: transparent;
+
+            .dark-theme &:not([class]) {
+                background: transparent;
+                box-shadow: none;
+            }
+        }
     }
 }

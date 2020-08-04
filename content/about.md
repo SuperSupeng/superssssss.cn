@@ -132,9 +132,3 @@ menu: "main"
 <image src="http://cdn.superssssss.cn/image/picture1.jpeg" width = "780" height = "213" alt="jinjihu">
 
 <br/>
-
----
-<br/>
-【大提琴】Mia & Sebastian’s Theme-爱乐之城
-
-{{< bilibili BV1nW41187Dg >}}

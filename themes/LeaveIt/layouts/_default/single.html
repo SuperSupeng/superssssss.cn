@@ -4,13 +4,13 @@
     <header class="post-header">
         <h1 class="post-title" itemprop="name headline">{{ .Title }}</h1>
         <div class="post-meta">
-                Written by <a itemprop="name" href="{{.Site.BaseURL }}" rel="author">{{ if isset .Params "author" }}{{ .Params.author }}{{ else }}{{ .Site.Params.author }}{{ end }}</a> with ♥ 
+                发表于 
                 <span class="post-time">
-                on <time datetime={{.Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }} itemprop="datePublished">{{ .Date.Format (.Site.Params.dateFormatToUse | default "January 2, 2006") }}</time>
+                    <time datetime={{.Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }} itemprop="datePublished">{{ .Date.Format (.Site.Params.dateFormatToUse | default "January 2, 2006") }}</time>
                 </span>
-                in
+                | 分类于
                 {{ with .Params.categories -}}
-                <i class="iconfont icon-folder"></i>
+                <!-- <i class="iconfont icon-folder"></i> -->
                 <span class="post-category">
                         {{ range . }}
                         {{- $name := . -}}
@@ -20,6 +20,7 @@
                         {{ end }}
                 </span>
                 {{- end }}
+                <span class="post-word-count">（{{ .WordCount }} Words，阅读时间约 {{div .WordCount 320}} Min）</span>
         </div>
     </header>
     <div class="post-content">
@@ -48,7 +49,7 @@
     </div>
 
     <div class="post-copyright">
-            {{ with .Site.Params.author }} 
+            <!-- {{ with .Site.Params.author }} 
             <p class="copyright-item">
                 <span>Author:</span>
                 <span>{{ . }} </span>
@@ -65,7 +66,7 @@
             <p class="copyright-item lincese">
                 {{ . | safeHTML}}
             </p>
-            {{ end }}
+            {{ end }} -->
     </div>
 
   
@@ -95,13 +96,11 @@
     </div>
 
     <div class="post-comment">
-        <script src="https://utteranc.es/client.js"
-            repo="SuperSupeng/superssssss.cn"
-            issue-term="pathname"
-            theme="github-light"
-            crossorigin="anonymous"
-            async>
-        </script>
+          {{ if ( .Params.showComments | default true ) }}
+                 {{ if ne .Site.DisqusShortname "" }}
+                     {{ template "_internal/disqus.html" . }}
+                 {{ end }}
+          {{ end }}
     </div>
 </article>
 {{- end }}

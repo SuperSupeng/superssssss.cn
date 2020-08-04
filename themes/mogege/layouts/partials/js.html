@@ -1,6 +1,15 @@
 {{ $highlight := resources.Get "/js/highlight.pack.js" }}
+
+{{ $live2d := resources.Get "/js/live2d.min.js" }}
+{{ $live2d_message := resources.Get "/js/message.js" }}
+
 {{ $main := resources.Get "/js/main.js" }}
 
+
+<script type="text/javascript">
+    var message_Path = {{ .Site.Params.Live2d.MessagePath }}
+    var home_Path = {{ .Site.Params.Live2d.HomePath }}  //此处修改为你的域名，必须带斜杠
+</script>
 
 {{ $main := slice  $highlight $main | resources.Concat "/js/vendor_main.js" | resources.Minify}}
 <script src="{{ printf "%s" $main.RelPermalink }}" defer ></script>
