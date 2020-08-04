@@ -97,7 +97,7 @@ initTips();
 window.setInterval(showHitokoto, 10000);
 
 function showHitokoto(){
-    $.getJSON('https://v1.hitokoto.cn/', function(result){
+    $.getJSON('https://v1.hitokoto.cn/?c=i', function(result){
         showMessage(result.hitokoto, 5000);
     });
 }
