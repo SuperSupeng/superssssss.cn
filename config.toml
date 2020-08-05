@@ -47,6 +47,7 @@ preserveTaxonomyNames = true
 
 [params.social]
     GitHub = "SuperSupeng"
+    WeChat = "/img/WeChat.jpeg"
     Email = "3529601371@qq.com"
 
 [params.live2d]
