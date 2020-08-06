@@ -94,7 +94,9 @@ menu: "main"
     }
 </style>
 
+<meting-js auto="https://music.163.com/#/song?id=27646786" list-folded=true></meting-js>
 
+<img src="/img/about.gif"></img>
 <div class="about-info">
     <div class="about-info-left">
         <p>欢迎来到Subranium的小站！<br/>
@@ -107,28 +109,29 @@ menu: "main"
                     rel="nofollow noreferrer" target="_blank">3529601371@qq.com</a></p></li>
 	<li><p><span class="iconfont icon-github"></span> GitHub: <a href="https://github.com/SuperSupeng"
                         rel="nofollow noreferrer" target="_blank">SuperSupeng</a></p></li>
+    <li><p><span class="iconfont icon-wechat"></span> WeChat: <a href="https://github.com/Knowledge-Precipitation-Tribe/Urban-computing-papers/blob/master/wechat.md"
+                        rel="nofollow noreferrer" target="_blank">Subranium</a></p></li>
         </ul>
     </div>
     <div class="about-info-right">
 	    <div class="left-hand"><span style="font-size: 0.5em">&ensp;</span>٩</div>
         <div class="left-ear">▲</div>
-        <img alt="Mogeko" src="/img/favicon.jpeg">
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110 src="//music.163.com/outchain/player?type=0&id=4957781147&auto=0&height=90"></iframe>
-        <div class="right-ear">▲</div>
-        <div class="right-hand">و<span style="font-size: 0.5em">✧</span></div>
+        <img alt="Subranium" src="/img/favicon.jpeg">
+        <br/>
+        <a href = "https://github.com/SuperSupeng"><img src = "https://github-readme-stats.vercel.app/api/top-langs/?username=SuperSupeng&layout=compact" style="width: 80%;" /></a>
     </div>
 </div>
 
 <p>My Github chart:</p>
 
-<p><img src="https://ghchart.rshah.org/mogeko" alt="Mogeko's Github chart" style="width: 100%;"></p>
+<p><img src="https://ghchart.rshah.org/SuperSupeng" alt="Subranium's Github chart" style="width: 100%;"></p>
 
 ---
-<br/>
+小游戏：
 
-<img src="http://cdn.superssssss.cn/image/picture.jpeg" alt="leifengta">
-<br/>
+<p  style="text-align:center"><a href = "http://139.9.131.190:5001/" >猜数字</a></p>
 
-<image src="http://cdn.superssssss.cn/image/picture1.jpeg" width = "780" height = "213" alt="jinjihu">
+---
+【大提琴】Mia & Sebastian’s Theme-爱乐之城
 
-<br/>
+{{< bilibili BV1nW41187Dg >}}

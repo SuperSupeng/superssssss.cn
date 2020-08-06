@@ -28,13 +28,17 @@ preserveTaxonomyNames = true
     url = "/tags/"
     weight = 3
   [[menu.main]]
+    name = "随手拍"
+    url = "/photos/"
+    weight = 4
+  [[menu.main]]
     name = "总结"
     url = "/summary/"
-    weight = 4
+    weight = 5
   [[menu.main]]
     name = "About me"
     url = "/about/"
-    weight = 5
+    weight = 6
 
 [params]
     since = 2019
@@ -47,7 +51,7 @@ preserveTaxonomyNames = true
 
 [params.social]
     GitHub = "SuperSupeng"
-    WeChat = "/img/WeChat.jpeg"
+    WeChat = "/img/wechat.jpeg"
     Email = "3529601371@qq.com"
 
 [params.live2d]

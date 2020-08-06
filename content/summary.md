@@ -18,6 +18,7 @@ date: 2020-04-29T11:19:13+08:00
   - <a href = "#Distributed and Cloud Native">Distributed and Cloud Native</a>
 - <a href = "#Go">Go</a>
   - <a href = "#Go framework">Go framework</a>
+  - <a hre = "#GolangGuide">GolangGuide</a>
   - <a href = "#Distributed-fileserver">Distributed-fileserver</a>
   - <a href = "#go-crawler-distributed">go-crawler-distributed</a>
   - <a href = "#Highly-concurrent-website">Highly-concurrent-website</a>
@@ -33,6 +34,7 @@ date: 2020-04-29T11:19:13+08:00
   - <a href = "#Tricks">Tricks</a>
   - <a href = "#Graph-neural-network">Graph-neural-network</a>
 - <a href = "#Urban-computing">Urban-computing</a>
+  - <a href = "#Urban-computing-papers">Urban-computing-papers</a>
   - <a href = "#How-to-Build-a-Graph-Based-Deep-Learning-Architecture-in-Traffic-Domain">How to Build a Graph Based Deep Learning Architecture in Traffic Domain</a>
   - <a href = "#Urban-flows-prediction-from-spatial-temporal-data-using-machine-learning">Urban flows prediction from spatial-temporal data using machine learning</a>
   - <a href = "#Everything-you-can-do-with-a-time-series">Everything you can do with a time series</a>
@@ -102,15 +104,19 @@ date: 2020-04-29T11:19:13+08:00
 - Gitbook在线浏览：[https://docs.go-framework.knowledge-precipitation.site](https://docs.go-framework.knowledge-precipitation.site/)
 - Github地址：[https://github.com/Knowledge-Precipitation-Tribe/go-framework](https://github.com/Knowledge-Precipitation-Tribe/go-framework)
 
-<div id="Distributed-fileserver">[3] Distributed-fileserver</div>
+<div id = "GolangGuide">[3] GolangGuide</div>
+
+- Gitbook在线浏览：[https://github.com/Knowledge-Precipitation-Tribe/GolangGuide](https://github.com/Knowledge-Precipitation-Tribe/GolangGuide)
+
+<div id="Distributed-fileserver">[4] Distributed-fileserver</div>
 
 - Github地址：[https://github.com/Knowledge-Precipitation-Tribe/Distributed-fileserver](https://github.com/Knowledge-Precipitation-Tribe/Distributed-fileserver)
 
-<div id="go-crawler-distributed">[4] go-crawler-distributed</div>
+<div id="go-crawler-distributed">[5] go-crawler-distributed</div>
 
 - Github地址：[https://github.com/Knowledge-Precipitation-Tribe/go-crawler-distributed](https://github.com/Knowledge-Precipitation-Tribe/go-crawler-distributed)
 
-<div id="Highly-concurrent-website">[5] Highly-concurrent-website</div>
+<div id="Highly-concurrent-website">[6] Highly-concurrent-website</div>
 
 - Github地址：[https://github.com/Knowledge-Precipitation-Tribe/Highly-concurrent-website](https://github.com/Knowledge-Precipitation-Tribe/Highly-concurrent-website)
 
@@ -172,20 +178,22 @@ date: 2020-04-29T11:19:13+08:00
 
 # <div id = "Urban-computing">Urban-computing</div>
 
+<div id = "Urban-computing-papers">[1] Urban-computing-papers</div>
+
 - Github地址：[https://github.com/Knowledge-Precipitation-Tribe/Urban-computing-papers](https://github.com/Knowledge-Precipitation-Tribe/Urban-computing-papers)
 
-<div id = "How-to-Build-a-Graph-Based-Deep-Learning-Architecture-in-Traffic-Domain">[1] How to Build a Graph-Based Deep Learning Architecture in Traffic Domain</div>
+<div id = "How-to-Build-a-Graph-Based-Deep-Learning-Architecture-in-Traffic-Domain">[2] How to Build a Graph-Based Deep Learning Architecture in Traffic Domain</div>
 
 - nbviewer在线浏览：[nbviewer](https://nbviewer.jupyter.org/github/Knowledge-Precipitation-Tribe/How-to-Build-a-Graph-Based-Deep-Learning-Architecture-in-Traffic-Domain/blob/master/README.ipynb)
 - Github地址：[https://github.com/Knowledge-Precipitation-Tribe/How-to-Build-a-Graph-Based-Deep-Learning-Architecture-in-Traffic-Domain](https://github.com/Knowledge-Precipitation-Tribe/How-to-Build-a-Graph-Based-Deep-Learning-Architecture-in-Traffic-Domain)
 
-<div id = "Urban-flows-prediction-from-spatial-temporal-data-using-machine-learning">[2] Urban flows prediction from spatial-temporal data using machine learning</div>
+<div id = "Urban-flows-prediction-from-spatial-temporal-data-using-machine-learning">[3] Urban flows prediction from spatial-temporal data using machine learning</div>
 
 - nbviewer在线浏览：[nbviewer](https://nbviewer.jupyter.org/github/Knowledge-Precipitation-Tribe/How-to-Build-a-Graph-Based-Deep-Learning-Architecture-in-Traffic-Domain/blob/master/README.ipynb)
 - Github地址：[https://github.com/Knowledge-Precipitation-Tribe/Urban-flows-prediction-from-spatial-temporal-data-using-machine-learning](https://github.com/Knowledge-Precipitation-Tribe/Urban-flows-prediction-from-spatial-temporal-data-using-machine-learning)
 
 
-<div id = "Everything-you-can-do-with-a-time-series">[3] Everything you can do with a time series</div>
+<div id = "Everything-you-can-do-with-a-time-series">[4] Everything you can do with a time series</div>
 
 - nbviewer在线浏览：[nbviewer](https://nbviewer.jupyter.org/github/Knowledge-Precipitation-Tribe/How-to-Build-a-Graph-Based-Deep-Learning-Architecture-in-Traffic-Domain/blob/master/README.ipynb)
 - Github地址：[https://github.com/Knowledge-Precipitation-Tribe/Everything-you-can-do-with-a-time-series](https://github.com/Knowledge-Precipitation-Tribe/Everything-you-can-do-with-a-time-series)
