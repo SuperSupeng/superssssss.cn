@@ -1,5 +1,5 @@
 ---
-title: "200811 Clouser"
+title: "go语言中的闭包"
 date: 2020-08-11T08:20:21+08:00
 categories: ["go"]
 tags: ["go", "clouser"]
