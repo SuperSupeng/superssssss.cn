@@ -7,38 +7,38 @@ menu: "main"
 <style>
 
     @import url('https://fonts.googleapis.com/css?family=Katibeh&display=swap');
-
+    
     .about-info {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
     }
-
+    
     .about-info-left li {
         list-style-type: none;
     }
-
+    
     .about-info-right {
         margin: .5em 1.25em;
     }
-
+    
     .about-info-right img {
         width: 130px;
     }
-
+    
     .about-info-right .left-ear,
     .about-info-right .left-hand,
     .about-info-right .right-ear,
     .about-info-right .right-hand {
         display: none;
     }
-
+    
     @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
         .about-info {
             flex-direction: column-reverse;
             align-items: center;
         }
-
+    
         .about-info-right {
             margin: auto auto 2em;
             display: flex;
@@ -46,12 +46,12 @@ menu: "main"
             justify-content: center;
             align-items: center;
         }
-
+    
         .about-info-right img {
             border-radius: 50%;
             -webkit-border-radius: 50%;
         }
-
+    
         .about-info-right .left-hand {
             font-family: 'Katibeh';
             display: inline;
@@ -61,7 +61,7 @@ menu: "main"
             -webkit-transform: translate(20px);
             -o-transform: translate(20px);
         }
-
+    
         .about-info-right .right-hand {
             font-family: 'Katibeh';
             display: inline;
@@ -71,7 +71,7 @@ menu: "main"
             -webkit-transform: translate(-18px);
             -o-transform: translate(-18px);
         }
-
+    
         .about-info-right .left-ear {
             display: inline;
             font-size: 1.2em;
@@ -81,7 +81,7 @@ menu: "main"
             -webkit-transform: rotate(-40deg) translate(20px, 15px);
             -o-transform: rotate(-40deg) translate(20px, 15px);
         }
-
+    
         .about-info-right .right-ear {
             display: inline;
             font-size: 1.2em;
@@ -125,11 +125,6 @@ menu: "main"
 <p>My Github chart:</p>
 
 <p><img src="https://ghchart.rshah.org/SuperSupeng" alt="Subranium's Github chart" style="width: 100%;"></p>
-
----
-小游戏：
-
-<p  style="text-align:center"><a href = "http://139.9.131.190:5001/" >猜数字</a></p>
 
 ---
 【大提琴】Mia & Sebastian’s Theme-爱乐之城
